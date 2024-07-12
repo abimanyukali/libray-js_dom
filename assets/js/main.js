@@ -46,7 +46,7 @@ function renderLibrary() {
       book.getTitle()
     } by ${book.getAuthor()}</div>
       <di>
-      <button class="px-2 py-1 bg-green-500 text-sm rounded text-white  " 
+      <button class="px-2 py-1 ${book.isRead() ? "bg-green-400" :"bg-green-700 "} text-sm rounded text-white  " 
       onClick="markBookAsRead (${index})"
       >
       Mark as Reade

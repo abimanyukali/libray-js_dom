@@ -13,7 +13,7 @@ class Book {
     return this.author;
   }
   markAsRead() {
-    this.read = true;
+    this.read = !this.read;
   }
   isRead() {
     return this.read;
